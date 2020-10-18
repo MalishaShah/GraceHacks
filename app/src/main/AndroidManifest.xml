@@ -20,6 +20,7 @@
         <activity android:name=".Home"/>
         <activity android:name=".DocList"/>
         <activity android:name=".Doc1"/>
+        <activity android:name=".MyMeetings"/>
     </application>
 
 </manifest>

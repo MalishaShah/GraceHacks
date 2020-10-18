@@ -89,5 +89,14 @@ public class Doc1 extends AppCompatActivity {
                 startActivity(calIn);
             }
         });
+        Button meet = findViewById(R.id.mymeet);
+        meet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MyMeetings.class);
+                intent.putExtra("info", "Booked Meeting on :"+date_view.getText().toString()+"at 6:00pm   Zoom Link: https://zoom.us/j/5551112222");
+                startActivity(intent);
+            }
+        });
     }
 }

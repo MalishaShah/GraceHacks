@@ -38,13 +38,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
         </CalendarView>
-<Button
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:orientation="horizontal"
+            android:layout_below="@+id/calender">
+        <Button
     android:id="@+id/book"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
         android:text="BOOK meeting"
+            android:layout_marginLeft="20dp"
         android:background="@color/colorAccent"
         android:layout_below="@id/calender"
         android:padding="5dp"
+            android:layout_marginRight="20dp"
         android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/mymeet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My meetings"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/calender"
+            android:padding="5dp"
+            android:layout_centerInParent="true"/>
+
+        </LinearLayout>
 </RelativeLayout>
