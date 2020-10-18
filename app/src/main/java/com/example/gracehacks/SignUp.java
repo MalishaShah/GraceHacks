@@ -14,6 +14,7 @@ public class SignUp extends AppCompatActivity {
     EditText Pass;
     EditText Name;
     Button signIn;
+    Button go;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +25,25 @@ public class SignUp extends AppCompatActivity {
         Pass = findViewById(R.id.regPass);
         Name = findViewById(R.id.regName);
         signIn = findViewById(R.id.signIn);
-
+        go = findViewById(R.id.button);
         signIn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SignUp.this, Survey.class);
+                String name = Name.getText().toString();
+                Intent i = new Intent(getApplicationContext(), Home.class);
+                i.putExtra("username", name);
                 startActivity(i);
             }
         });
+
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Survey.class));
+            }
+        });
+
+
     }
 }
