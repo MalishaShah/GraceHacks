@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="150dp"
-        android:text="El" />
+        android:text="Email" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,6 +32,7 @@
         android:layout_marginTop="240dp"
         android:layout_marginStart="50dp"
         android:ems="15"
+        android:inputType="textPassword"
         android:id="@+id/regPass"/>
     
     <TextView
@@ -57,13 +58,7 @@
         android:text="Register"
         android:id="@+id/signIn"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signIn"
 
-        android:text="Go!" />
 
 
 </RelativeLayout>

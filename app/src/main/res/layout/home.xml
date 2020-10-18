@@ -23,7 +23,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search for a Doctor"
+        android:padding="5dp"
         android:background="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get insurances"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Check"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prescriptions"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Meetings"
+        android:backgroundTint="@color/colorAccent"/>
 
 
 </LinearLayout>
