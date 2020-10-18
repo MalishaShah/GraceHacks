@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 login();
+                Intent i = new Intent(MainActivity.this, Survey.class);
+                startActivity(i);
             }
 
             private void login() {
